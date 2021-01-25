@@ -1,6 +1,6 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import Category, Post,
+from .models import Category, Post
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
