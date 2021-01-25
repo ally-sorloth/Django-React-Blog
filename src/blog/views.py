@@ -110,6 +110,3 @@
 #             return redirect("blog:detail", slug=slug)
 #         Like.objects.create(user=request.user, post=obj)
 #     return redirect("blog:detail", slug=slug)
-
-
-# Create your views here.
