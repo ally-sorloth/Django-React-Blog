@@ -8,14 +8,14 @@ from django.contrib.auth.models import User
 #         return super().get_queryset().filter(status='published')
 
 
-# class Category(models.Model):
-#     name = models.CharField(max_length=50)
+class Category(models.Model):
+    name = models.CharField(max_length=50)
 
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
 
-#     class Meta:
-#         verbose_name_plural = "Categories"
+    class Meta:
+        verbose_name_plural = "Categories"
 
 
 class Post(models.Model):

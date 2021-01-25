@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-import django_heroku
+# import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +28,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['claruswayblogapp.herokuapp.com']
+ALLOWED_HOST = []
+# ALLOWED_HOSTS = ['claruswayblogapp.herokuapp.com']
 
 
 # Application definition
@@ -156,13 +157,13 @@ LOGIN_URL = 'login'
 # LOGout_URL = 'logot'
 
 # sending email
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config('EMAIL_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_PASS')
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = config('EMAIL_USER')
+# EMAIL_HOST_PASSWORD = config('EMAIL_PASS')
 
 
-CORS_ALLOW_ALL_ORIGINS = True
-django_heroku.settings(locals())
+# CORS_ALLOW_ALL_ORIGINS = True
+# django_heroku.settings(locals())
