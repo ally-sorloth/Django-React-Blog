@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-# import django_heroku
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,8 +28,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOST = []
-# ALLOWED_HOSTS = ['claruswayblogapp.herokuapp.com']
+# ALLOWED_HOST = []
+ALLOWED_HOSTS = ['django-react-blog-36.herokuapp.com']
 
 
 # Application definition
@@ -165,5 +165,5 @@ LOGIN_URL = 'login'
 # EMAIL_HOST_PASSWORD = config('EMAIL_PASS')
 
 
-# CORS_ALLOW_ALL_ORIGINS = True
-# django_heroku.settings(locals())
+CORS_ALLOW_ALL_ORIGINS = True
+django_heroku.settings(locals())
